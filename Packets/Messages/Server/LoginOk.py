@@ -11,12 +11,10 @@ class LoginOk(Writer):
         self.version = 1
 
     def encode(self):
-        self.writeInt(self.player.HighID)
-        self.writeInt(self.player.LowID)
-        # HighID, lowID
-        self.writeInt(self.player.HighID)
-        self.writeInt(self.player.LowID)
-        # HighID, lowID
+        self.writeInt(0)
+        self.writeInt(1)
+        self.writeInt(0)
+        self.writeInt(1)
         self.writeString("a77bad4dc5241ccb44d5a541376396208f92af8") #token
 
         self.writeString()
