@@ -26,7 +26,23 @@ class OwnHomeData(Writer):
         self.writeInt(1) #LowID
         self.writeInt(0)
         self.writeInt(1)
-        self.writeByte(0) #Player is in clan
+        
+        self.writeByte(1) #Player is in clan
+        
+        self.writeInt(0)
+        self.writeInt(1)
+        
+        self.writeString("PyClash")
+        
+        self.writeInt(13000001)
+        
+        self.writeInt(0)
+        self.writeByte(1)
+        self.writeInt(0)
+        self.writeInt(1)
+        self.writeByte(1)
+        self.writeInt(0)
+        self.writeInt(1)
         
         self.writeInt(11) #League
         
